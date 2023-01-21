@@ -1,7 +1,8 @@
 //your code here
-let input=document.getElementById('evaluatedText')
-let heading3=document.getElementById('wordCount')
-input.addEventListener('input',essay)
-function essay() {
-	heading3.innerHTML=input.value.length
-}
+const textbox = document.getElementById('evaluatedText');
+const letterCountElement = document.getElementById('letterCount');
+
+textbox.addEventListener('keyup', function() {
+  const letterCount = textbox.value.length;
+  letterCountElement.innerHTML = letterCount;
+});
